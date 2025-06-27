@@ -1,0 +1,25 @@
+1. Java Multithreading Tutorial
+What:
+Multithreading allows multiple threads (smallest unit of a process) to run concurrently,
+enabling parallel execution.
+
+When:
+Use when you want to perform multiple tasks at the same time—e.g., background tasks,
+animations, or handling multiple client requests.
+
+Where:
+In applications like games, servers, or any performance-critical real-time systems.
+
+How:
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread is running...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        t1.start();
+    }
+}
